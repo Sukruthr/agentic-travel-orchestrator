@@ -7,19 +7,20 @@ import sys
 BASE_URL = "http://localhost:8000"  # Backend endpoint
 
 st.set_page_config(
-    page_title="🌍 Atlas AI: Your Travel Planning Agentic Application",
+    page_title="Atlas AI",
     page_icon="🌍",
     layout="centered",
     initial_sidebar_state="expanded",
 )
 
-st.title("🌍 Atlas AI")
+st.title("🌍 Atlas AI \n Your Travel Planning Agentic Application")
 
 # Initialize chat history
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
 # Display chat history
+# st.header("Your Travel Planning Agentic Application")
 st.header("How can I help you in planning a trip? Let me know where do you want to visit.")
 
 # Chat input box at bottom
